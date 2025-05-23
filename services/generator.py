@@ -23,9 +23,9 @@ async def handle_prompt(user_text: str) -> bytes | None:
         logging.error(f"Ошибка перевода: {e}")
         return None
 
-    prompt = f"{translated_text}, black and white line art, coloring book style, clean outlines, simple design, highly detailed, no shading, no patterns, no abstract elements"
+    prompt = f"{translated_text}, black and white line art for children coloring book, simple clean lines, white background, child-friendly, cartoon style, no color, no shading, clear outlines, minimalistic, high contrast"
     negative_prompt = (
-        "abstract, patterns, noise, blurry, low detail, grayscale, shadows, textures"
+        "color, realistic, 3d, shading, background, text, watermark, blurry, photo, sketchy, messy, low contrast, grayscale, shadows"
     )
 
     try:
